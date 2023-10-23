@@ -1,0 +1,286 @@
+:root {
+    --pink: #f14395;
+    --black : #0a0a0a;
+    --shadow : 0 2px 2px rgba(23 0 0  0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height:4000px;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/tribun-batam.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4 , .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive ;
+    color: var(--pink);
+    font-size: 10rem ;
+}
+
+.hero h4 {
+    font-size: 2.7rem;
+}
+
+.hero p {
+    font-size: 3rem;
+}
+
+.hero a {
+    color : white;
+    background-color: var(--pink);
+    box-shadow: var(--shadow);
+    font-size: 1.8rem;
+    border-radius: 8px;
+    
+}
+
+.home{
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    font-size: 10rem;
+    color: var(--pink);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'sacramento', cursive;
+
+}
+
+.home p {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+/*info*/
+.info{
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.info h2 {
+    font-family: '', cursive;
+    color: var(--pink);
+    font-size: 8rem;
+    font-weight:bold ;
+    
+}
+
+.info p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*story*/
+.story{
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.story h2 {
+    font-family: '', cursive;
+    color: var(--pink);
+    font-size: 8rem;
+    text-align: center;
+}
+
+.story p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*galery*/
+.galery{
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.galery h2 {
+    font-family: '', cursive;
+    color: var(--pink);
+    font-size: 8rem;
+    text-align: center;
+}
+
+.galery p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/*maps*/
+.maps{
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+.maps h2 {
+    font-family: '', cursive;
+    color: var(--pink);
+    font-size: 8rem;
+    text-align: center;
+}
+
+.maps p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title{
+    font-family: 'sacramento', cursive ;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;    
+}
+
+/*video trone */
+.fullscreen-bg {
+    position: cover ;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+ 
+.bg-video {
+    position: absolute;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+ 
+@media (min-aspect-ratio: 16/9) {
+    .bg-video {
+        height: 300%;
+        top: -100%;
+    }
+}
+ 
+@media (max-aspect-ratio: 16/9) {
+    .bg-video {
+        width: 300%;
+        left: -100%;
+    }
+}
+ 
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('poster.jpg') center center / cover no-repeat;
+    }
+ 
+    .bg-video {
+        display: none;
+    }
+}
+
+/* MEDIA QUERY */
+/*laptop */
+@media (max-width: 2000px) {
+    html{
+        font-size: 50%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 75px;
+        margin: 7.5px;
+    }
+
+}
+
+/* tablet */
+@media (max-width: 1280px) {
+    html{
+        font-size: 50%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 50px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/*phone*/
+@media (max-width: 565px){
+    html{
+        font-size: 30% ;
+    }
+    .simply-countdown > .simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+
+    .mynavbar .nav-link{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
